@@ -1,0 +1,13 @@
+<h1>Craigslist</h1>
+<table>
+  <thead>
+  </thead>
+  <tbody>
+      <h3>Posts for <%= @category.name %></h3>
+ 
+      <% @category.posts.each do |post| %>
+        <a href="/post/<%= post.id%>"><%= post.title %></a>
+        <br>
+      <% end %>
+  </tbody>
+</table>
